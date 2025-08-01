@@ -29,6 +29,7 @@ main {
     width: 100%;
     position: relative;
     background-color: #19224a;
+    overflow-x: hidden;
     z-index: 1;
     #banner {
         width: 100%;
@@ -40,6 +41,9 @@ main {
         background-size: cover;
         padding: 5.4rem 0 0;
         position: relative;
+        .banner-header_mb {
+            display: none !important;
+        }
         .banner-header {
             position: relative;
             display: flex;
@@ -124,8 +128,7 @@ main {
                 .container-left-top {
                     display: flex;
                     align-items: center;
-                    padding: 2rem 0;
-                    margin-top: 3rem;
+                    padding: 2rem 0 0;
                     img {
                         margin-left: 2rem;
                     }
@@ -1533,8 +1536,8 @@ main {
     }
     main {
         #banner {
-            min-height: 70vh !important;
-            padding: 2rem 2rem 0;
+            min-height: 80vh !important;
+            padding: 2rem 0 0 !important;
             z-index: 11;
             .banner-header {
                 display: none !important;
@@ -1543,6 +1546,7 @@ main {
                 display: flex !important;
                 justify-content: space-between;
                 align-items: center;
+                padding: 0 2rem;
                 .header-mb {
                     display: flex;
                     width: 100%;
@@ -1666,17 +1670,14 @@ main {
         .section-group {
             padding: 0 0 5rem;
             #about {
+                min-height: unset;
                 padding: 0 2rem;
                 .about-container {
-                    padding: 0 !important;
-                    width: 100%;
                     min-height: unset !important;
+                    padding: 10rem 0 !important;
+                    width: 100%;
                     .about-bg {
                         display: none;
-                        // width: 100%;
-                        // background-size: cover;
-                        // right: 0;
-                        // left: 0;
                     }
                     .about-content {
                         h1 {
@@ -1695,6 +1696,7 @@ main {
                             }
                         }
                         .about-content-bottom {
+                            display: none;
                             h4 {
                                 font-size: 16px;
                                 color: #fff;
@@ -1711,7 +1713,7 @@ main {
                     justify-content: center;
                     align-items: center;
                     .contract-content_left {
-                        text-align: center;
+                        display: none;
                         img {
                             max-width: 50%;
                         }
@@ -1770,13 +1772,16 @@ main {
             }
         }
         #product {
-            padding: 3rem 2rem 20rem;
+            padding: 3rem 0 20rem;
             min-height: unset;
             h2 {
                 -webkit-text-stroke-width: 1px;
                 font-size: 26px;
+                padding: 0 2rem;
             }
             .para {
+                padding: 0 2rem;
+
                 p {
                     font-size: 14px;
                 }
@@ -1898,6 +1903,10 @@ main {
                     .footer-social {
                         justify-content: center;
                         margin: 3.5rem 0;
+                        img {
+                            max-width: 24px;
+                            max-height: 24px;
+                        }
                     }
                 }
             }

@@ -31,6 +31,7 @@ main {
   width: 100%;
   position: relative;
   background-color: #19224a;
+  overflow-x: hidden;
   z-index: 1;
 }
 main #banner {
@@ -43,6 +44,9 @@ main #banner {
   background-size: cover;
   padding: 5.4rem 0 0;
   position: relative;
+}
+main #banner .banner-header_mb {
+  display: none !important;
 }
 main #banner .banner-header {
   position: relative;
@@ -122,8 +126,7 @@ main #banner .banner-container .banner-container_left {
 main #banner .banner-container .banner-container_left .container-left-top {
   display: flex;
   align-items: center;
-  padding: 2rem 0;
-  margin-top: 3rem;
+  padding: 2rem 0 0;
 }
 main #banner .banner-container .banner-container_left .container-left-top img {
   margin-left: 2rem;
@@ -1315,8 +1318,8 @@ main #footer .footer-right .footer-community .footer-social .social:hover {
     padding: 3px 5px !important;
   }
   main #banner {
-    min-height: 70vh !important;
-    padding: 2rem 2rem 0;
+    min-height: 80vh !important;
+    padding: 2rem 0 0 !important;
     z-index: 11;
   }
   main #banner .banner-header {
@@ -1326,6 +1329,7 @@ main #footer .footer-right .footer-community .footer-social .social:hover {
     display: flex !important;
     justify-content: space-between;
     align-items: center;
+    padding: 0 2rem;
   }
   main #banner .banner-header_mb .header-mb {
     display: flex;
@@ -1439,12 +1443,13 @@ main #footer .footer-right .footer-community .footer-social .social:hover {
     padding: 0 0 5rem;
   }
   main .section-group #about {
+    min-height: unset;
     padding: 0 2rem;
   }
   main .section-group #about .about-container {
-    padding: 0 !important;
-    width: 100%;
     min-height: unset !important;
+    padding: 10rem 0 !important;
+    width: 100%;
   }
   main .section-group #about .about-container .about-bg {
     display: none;
@@ -1462,6 +1467,9 @@ main #footer .footer-right .footer-community .footer-social .social:hover {
     border-color: #fff;
     color: #fff;
   }
+  main .section-group #about .about-container .about-content .about-content-bottom {
+    display: none;
+  }
   main .section-group #about .about-container .about-content .about-content-bottom h4 {
     font-size: 16px;
     color: #fff;
@@ -1476,7 +1484,7 @@ main #footer .footer-right .footer-community .footer-social .social:hover {
     align-items: center;
   }
   main .section-group #contract .contract-content .contract-content_left {
-    text-align: center;
+    display: none;
   }
   main .section-group #contract .contract-content .contract-content_left img {
     max-width: 50%;
@@ -1530,12 +1538,16 @@ main #footer .footer-right .footer-community .footer-social .social:hover {
     font-size: 14px;
   }
   main #product {
-    padding: 3rem 2rem 20rem;
+    padding: 3rem 0 20rem;
     min-height: unset;
   }
   main #product h2 {
     -webkit-text-stroke-width: 1px;
     font-size: 26px;
+    padding: 0 2rem;
+  }
+  main #product .para {
+    padding: 0 2rem;
   }
   main #product .para p {
     font-size: 14px;
@@ -1650,5 +1662,9 @@ main #footer .footer-right .footer-community .footer-social .social:hover {
   main #footer .footer-right .footer-community .footer-social {
     justify-content: center;
     margin: 3.5rem 0;
+  }
+  main #footer .footer-right .footer-community .footer-social img {
+    max-width: 24px;
+    max-height: 24px;
   }
 }/*# sourceMappingURL=style.css.map */

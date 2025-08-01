@@ -10,6 +10,7 @@ function copyCode(button) {
         }, 1500);
     });
 }
+
 const menuBtn = document.getElementById("menu-toggle");
 const submenu = document.getElementById("submenu");
 const closeBtn = document.getElementById("menu-close");
