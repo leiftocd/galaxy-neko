@@ -1938,16 +1938,18 @@ main {
                         align-items: center;
                         flex-direction: column;
                         justify-content: center;
-                        padding: 0 2rem;
                         div {
                             p {
+                                padding: 0 2rem !important;
                                 font-size: 14px;
                             }
                         }
                         .ca-code {
                             margin: 1.5rem 0 !important;
+                            justify-content: center;
                             .code-text {
                                 font-size: 14px;
+                                padding: 6px !important;
                             }
                             button {
                                 padding: 0px 5px;

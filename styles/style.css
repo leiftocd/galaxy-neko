@@ -1661,16 +1661,18 @@ main #footer .footer-right .footer-community .footer-social .social:hover {
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    padding: 0 2rem;
   }
   main #banner .banner-container .banner-container_left .container-left-center div p {
+    padding: 0 2rem !important;
     font-size: 14px;
   }
   main #banner .banner-container .banner-container_left .container-left-center .ca-code {
     margin: 1.5rem 0 !important;
+    justify-content: center;
   }
   main #banner .banner-container .banner-container_left .container-left-center .ca-code .code-text {
     font-size: 14px;
+    padding: 6px !important;
   }
   main #banner .banner-container .banner-container_left .container-left-center .ca-code button {
     padding: 0px 5px;
