@@ -378,7 +378,7 @@ main .section-group #contract .contract-content .contract-content_right .swap:ho
   cursor: pointer;
   transition: all linear 0.3s;
   filter: hue-rotate(180deg);
-  transform: scale(1.02);
+  transform: scale(1.02) !important;
   box-shadow: -22px 16px 24.4px 0 redinset, 28px -8px 24.4px 0 red inset, -1px 3px 0 0 #000;
 }
 main .section-group #contract .contract-code {
@@ -777,7 +777,6 @@ main #community .contract-code .ca-code .code-text {
   border-radius: 4px;
 }
 main #community .contract-code .ca-code .copy-button {
-  position: relative;
   color: #000;
   font-size: 20.487px;
   font-weight: 400;
@@ -794,7 +793,6 @@ main #community .contract-code .ca-code .copy-button {
   background: #ffcf00;
   box-shadow: -1.205px 3.615px 0 0 #000;
   border: 3px solid;
-  position: relative;
 }
 main #community .contract-code .ca-code .copy-button:hover {
   transition: all linear 0.3s;
@@ -933,7 +931,7 @@ main #footer .footer-right .footer-community .footer-social .social:hover {
   width: 100%;
   overflow: hidden;
   white-space: nowrap;
-  z-index: 9999;
+  z-index: 11;
   transform: rotate(3.5deg);
   background: linear-gradient(to bottom, rgb(11, 61, 136), rgb(7, 197, 255));
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -1316,32 +1314,102 @@ main #footer .footer-right .footer-community .footer-social .social:hover {
     font-size: 14px !important;
     padding: 3px 5px !important;
   }
-  .warning-container,
-  .warning-container_reverse {
-    display: none;
-  }
   main #banner {
-    padding: 2rem;
+    min-height: 70vh !important;
+    padding: 2rem 2rem 0;
+    z-index: 11;
   }
   main #banner .banner-header {
+    display: none !important;
+  }
+  main #banner .banner-header_mb {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+  }
+  main #banner .banner-header_mb .header-mb {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+  main #banner .banner-header_mb .header-mb .logo {
+    display: flex;
+  }
+  main #banner .banner-header_mb .header-mb .logo img {
+    max-width: 60px;
+    max-height: 60px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main #banner .banner-header_mb .header-mb .menu svg {
+    fill: #75faff;
+  }
+  main #banner .banner-header_mb .sub-menu-overlay {
     display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 100;
+    justify-content: center;
+    align-items: center;
+  }
+  main #banner .banner-header_mb .sub-menu-overlay.active {
+    display: flex;
+  }
+  main #banner .banner-header_mb .sub-menu-content {
+    color: white;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+  main #banner .banner-header_mb .sub-menu-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  main #banner .banner-header_mb .sub-menu-content ul li {
+    font-size: 16px;
+    margin: 16px 0;
+  }
+  main #banner .banner-header_mb .close-menu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    fill: white;
+  }
+  main #banner .banner-header_mb .btn-buy button {
+    border: 3px solid #fff;
+    background: #75faff;
+    box-shadow: -12px 6px 14.4px 0 #fff inset, 18px -8px 14.4px 0 #fff inset, -1px 3px 0 0 #000;
+    color: #000;
+    padding: 5px 14px;
+    font-weight: bold;
+    border-radius: 8px;
   }
   main #banner .banner-container {
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
   }
   main #banner .banner-container .banner-container_left {
     max-width: 100%;
   }
   main #banner .banner-container .banner-container_left .container-left-top {
-    visibility: hidden;
-    opacity: 0;
+    display: none;
   }
   main #banner .banner-container .banner-container_left .container-left-center {
     text-align: center;
   }
   main #banner .banner-container .banner-container_left .container-left-center div p {
     font-size: 14px;
+  }
+  main #banner .banner-container .banner-container_left .container-left-center .ca-code {
+    margin: 1.5rem 0 !important;
   }
   main #banner .banner-container .banner-container_left .container-left-center .ca-code .code-text {
     font-size: 14px;
@@ -1354,6 +1422,13 @@ main #footer .footer-right .footer-community .footer-social .social:hover {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+  }
+  main #banner .banner-container .banner-container_left .container-left-bottom .banner-social .social {
+    padding: 0.4rem 0.5rem !important;
+  }
+  main #banner .banner-container .banner-container_left .container-left-bottom .banner-social .social img {
+    max-width: 30px;
+    max-height: 30px;
   }
   main #banner .banner-container .banner-container_right {
     display: flex;
@@ -1393,7 +1468,7 @@ main #footer .footer-right .footer-community .footer-social .social:hover {
   }
   main .section-group #contract {
     min-height: unset;
-    padding-bottom: 4rem !important;
+    padding-bottom: 15rem !important;
   }
   main .section-group #contract .contract-content {
     flex-direction: column;
@@ -1411,18 +1486,22 @@ main #footer .footer-right .footer-community .footer-social .social:hover {
   }
   main .section-group #contract .contract-content .contract-content_right .swap {
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%) !important;
   }
-  main .section-group #contract .contract-code h4 {
-    font-size: 18px;
+  main .section-group #contract .contract-content .contract-content_right .swap:hover {
+    transform: translateX(-50%) !important;
   }
-  main .section-group #contract .contract-code .ca-code {
-    gap: 0.5rem;
+  main .section-group #contract .contract-content .contract-code h4 {
+    font-size: 18px !important;
   }
-  main .section-group #contract .contract-code .ca-code .code-text {
-    font-size: 15px;
+  main .ca-code {
+    gap: 0.5rem !important;
+    margin: 1.5rem 9rem 0;
   }
-  main .section-group #contract .contract-code .ca-code button {
+  main .ca-code .code-text {
+    font-size: 15px !important;
+  }
+  main .ca-code button {
     padding: 2px 5px !important;
     font-size: 15px !important;
   }
@@ -1451,7 +1530,7 @@ main #footer .footer-right .footer-community .footer-social .social:hover {
     font-size: 14px;
   }
   main #product {
-    padding: 3rem 2rem;
+    padding: 3rem 2rem 20rem;
     min-height: unset;
   }
   main #product h2 {
@@ -1543,9 +1622,9 @@ main #footer .footer-right .footer-community .footer-social .social:hover {
     position: absolute;
     bottom: 0;
     left: 25%;
-    width: 100%;
     font-size: 14px;
     margin: 0 0 1.5rem;
+    width: unset !important;
   }
   main #footer .footer-right {
     width: 100%;
