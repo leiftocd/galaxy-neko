@@ -1657,6 +1657,11 @@ main #footer .footer-right .footer-community .footer-social .social:hover {
   }
   main #banner .banner-container .banner-container_left .container-left-center {
     text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 2rem;
   }
   main #banner .banner-container .banner-container_left .container-left-center div p {
     font-size: 14px;
@@ -1778,6 +1783,7 @@ main #footer .footer-right .footer-community .footer-social .social:hover {
   main #intro h2 {
     font-size: 26px;
     -webkit-text-stroke-width: 1px;
+    padding: 4rem 0 !important;
   }
   main #intro .intro-container {
     flex-direction: column;
@@ -1867,6 +1873,7 @@ main #footer .footer-right .footer-community .footer-social .social:hover {
     display: none;
   }
   main #footer {
+    gap: 4rem !important;
     padding: 3rem 5rem !important;
     flex-direction: column;
   }
@@ -1892,7 +1899,10 @@ main #footer .footer-right .footer-community .footer-social .social:hover {
   main #footer .footer-left .copy-right {
     position: absolute;
     bottom: 0;
-    left: 25%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
     font-size: 16px !important;
     margin: 0 0 1.5rem;
     width: unset !important;
