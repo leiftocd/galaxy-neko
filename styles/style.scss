@@ -1009,7 +1009,8 @@ main {
 .warning-container_reverse {
     position: absolute;
     bottom: 0%;
-    width: 100%;
+    left: 0;
+    width: 106%;
     overflow: hidden;
     white-space: nowrap;
     z-index: 11;
@@ -2040,6 +2041,7 @@ main {
                     }
                     .contract-content_right {
                         text-align: center;
+                        max-width: unset !important;
                         .swap {
                             left: 50%;
                             transform: translateX(-50%) !important;

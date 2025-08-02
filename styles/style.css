@@ -938,7 +938,8 @@ main #footer .footer-right .footer-community .footer-social .social:hover {
 .warning-container_reverse {
   position: absolute;
   bottom: 0%;
-  width: 100%;
+  left: 0;
+  width: 106%;
   overflow: hidden;
   white-space: nowrap;
   z-index: 11;
@@ -1755,6 +1756,7 @@ main #footer .footer-right .footer-community .footer-social .social:hover {
   }
   main .section-group #contract .contract-content .contract-content_right {
     text-align: center;
+    max-width: unset !important;
   }
   main .section-group #contract .contract-content .contract-content_right .swap {
     left: 50%;
