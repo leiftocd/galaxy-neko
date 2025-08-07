@@ -33,7 +33,6 @@ main {
     z-index: 1;
     #banner {
         width: 100%;
-        min-height: 100vh;
         height: 100%;
         background-image: url("../asset/image/Bg1.png");
         background-position: center;
@@ -519,9 +518,9 @@ main {
         background-position: center;
         background-size: contain;
         width: 100%;
-        min-height: 100vh;
         display: flex;
         align-items: center;
+        padding-bottom: 10rem;
         flex-direction: column;
         h2 {
             color: #fff;
@@ -1328,7 +1327,6 @@ main {
     }
     main {
         #banner {
-            min-height: 85vh;
             .banner-header {
             }
             .banner-container {
@@ -1548,7 +1546,6 @@ main {
     }
     main {
         #banner {
-            min-height: 84vh;
             .banner-header {
                 margin: 0 6.3rem 0;
             }
@@ -1788,11 +1785,13 @@ main {
             #about {
                 padding: 0 !important;
                 .about-container {
+                    justify-content: center;
                     .about-bg {
                         background-image: url("../asset/image/tablet-about.png") !important;
                         background-size: auto;
                     }
                     .about-content {
+                        padding-left: 15% !important;
                     }
                     .tablet-about {
                         display: flex !important;
@@ -1843,8 +1842,8 @@ main {
             }
         }
         #intro {
-            padding: 0rem 8rem;
-            min-height: 70vh;
+            padding: 0rem 8rem 5rem;
+            min-height: 80vh;
             h2 {
                 font-size: 36px;
                 -webkit-text-stroke-width: 2px;
@@ -2042,12 +2041,16 @@ main {
                         right: 0 !important;
                         justify-content: flex-end;
                     }
+                    .about-content {
+                        padding: 0 !important;
+                    }
                 }
             }
         }
         #intro {
+            min-height: unset;
             .intro-container {
-                gap: 4rem !important;
+                gap: 3rem;
             }
         }
         #product {
@@ -2330,18 +2333,23 @@ main {
         }
         #intro {
             background-size: cover;
-            padding: 0 3rem !important;
-            min-height: 75vh !important;
+            padding: 0 3rem 5rem !important;
+            min-height: unset !important;
             h2 {
                 font-size: 26px;
                 -webkit-text-stroke-width: 1px;
                 padding: 4rem 0 !important;
             }
             .intro-container {
+                gap: 3rem !important;
+                display: flex;
                 flex-direction: column;
                 .intro-container_text {
                     position: relative !important;
                     text-align: center;
+                    position: relative !important;
+                    left: unset !important;
+                    right: unset !important;
                     span {
                         font-size: 20px;
                         -webkit-text-stroke-width: 1px;

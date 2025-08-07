@@ -36,7 +36,6 @@ main {
 }
 main #banner {
   width: 100%;
-  min-height: 100vh;
   height: 100%;
   background-image: url("../asset/image/Bg1.png");
   background-position: center;
@@ -468,9 +467,9 @@ main #intro {
   background-position: center;
   background-size: contain;
   width: 100%;
-  min-height: 100vh;
   display: flex;
   align-items: center;
+  padding-bottom: 10rem;
   flex-direction: column;
 }
 main #intro h2 {
@@ -1233,9 +1232,6 @@ main #footer .footer-right .footer-community .footer-social .social:hover {
   html {
     font-size: 50%;
   }
-  main #banner {
-    min-height: 85vh;
-  }
   main #banner .banner-container .banner-container_left {
     padding-left: 10rem;
   }
@@ -1400,9 +1396,6 @@ main #footer .footer-right .footer-community .footer-social .social:hover {
   .warning-item {
     font-size: 48px !important;
   }
-  main #banner {
-    min-height: 84vh;
-  }
   main #banner .banner-header {
     margin: 0 6.3rem 0;
   }
@@ -1563,9 +1556,15 @@ main #footer .footer-right .footer-community .footer-social .social:hover {
   main .section-group #about {
     padding: 0 !important;
   }
+  main .section-group #about .about-container {
+    justify-content: center;
+  }
   main .section-group #about .about-container .about-bg {
     background-image: url("../asset/image/tablet-about.png") !important;
     background-size: auto;
+  }
+  main .section-group #about .about-container .about-content {
+    padding-left: 15% !important;
   }
   main .section-group #about .about-container .tablet-about {
     display: flex !important;
@@ -1605,8 +1604,8 @@ main #footer .footer-right .footer-community .footer-social .social:hover {
     max-width: 50%;
   }
   main #intro {
-    padding: 0rem 8rem;
-    min-height: 70vh;
+    padding: 0rem 8rem 5rem;
+    min-height: 80vh;
   }
   main #intro h2 {
     font-size: 36px;
@@ -1760,8 +1759,14 @@ main #footer .footer-right .footer-community .footer-social .social:hover {
     right: 0 !important;
     justify-content: flex-end;
   }
+  main .section-group #about .about-container .about-content {
+    padding: 0 !important;
+  }
+  main #intro {
+    min-height: unset;
+  }
   main #intro .intro-container {
-    gap: 4rem !important;
+    gap: 3rem;
   }
   main #product .product-container {
     gap: 2rem;
@@ -2017,8 +2022,8 @@ main #footer .footer-right .footer-community .footer-social .social:hover {
   }
   main #intro {
     background-size: cover;
-    padding: 0 3rem !important;
-    min-height: 75vh !important;
+    padding: 0 3rem 5rem !important;
+    min-height: unset !important;
   }
   main #intro h2 {
     font-size: 26px;
@@ -2026,11 +2031,16 @@ main #footer .footer-right .footer-community .footer-social .social:hover {
     padding: 4rem 0 !important;
   }
   main #intro .intro-container {
+    gap: 3rem !important;
+    display: flex;
     flex-direction: column;
   }
   main #intro .intro-container .intro-container_text {
     position: relative !important;
     text-align: center;
+    position: relative !important;
+    left: unset !important;
+    right: unset !important;
   }
   main #intro .intro-container .intro-container_text span {
     font-size: 20px;
