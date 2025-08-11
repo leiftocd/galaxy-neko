@@ -613,7 +613,7 @@ main #product .product-container .product-left .product-left_title .apr {
   color: #fff;
   text-align: center;
   font-size: 40px;
-  line-height: 98.58%; /* 25.631px */
+  line-height: 100%; /* 25.631px */
   font-weight: 700;
 }
 main #product .product-container .product-left .product-left_title .months {
@@ -622,13 +622,13 @@ main #product .product-container .product-left .product-left_title .months {
   font-size: 26px;
   font-style: normal;
   font-weight: 400;
-  line-height: 98.58%; /* 25.631px */
+  line-height: 100%;
 }
 main #product .product-container .product-left p {
   color: #c3c3c3;
   font-size: 20px;
   font-weight: 400;
-  line-height: 98.58%; /* 19.716px */
+  line-height: 100%;
   padding: 0 2.5rem;
 }
 main #product .product-container .product-left .product-left_button {
@@ -649,7 +649,7 @@ main #product .product-container .product-left .product-left_button .price {
   color: #8b8b8b;
   font-size: 24px;
   font-weight: 400;
-  line-height: 98.58%; /* 23.659px */
+  line-height: 100%;
   border-radius: 12px;
   background: #f1f1f1;
 }
@@ -669,7 +669,7 @@ main #product .product-container .product-left .product-left_button .stake {
   text-align: center;
   font-size: 26px;
   font-weight: 700;
-  line-height: 98.58%; /* 25.631px */
+  line-height: 100%; /* 25.631px */
 }
 main #product .product-container .product-left .product-left_button .stake:hover {
   cursor: pointer;
@@ -723,7 +723,7 @@ main #product .product-container .product-right .product-right_title .apr {
   color: #fff;
   text-align: center;
   font-size: 40px;
-  line-height: 98.58%; /* 25.631px */
+  line-height: 100%; /* 25.631px */
   font-weight: 700;
 }
 main #product .product-container .product-right .product-right_title .months {
@@ -732,14 +732,14 @@ main #product .product-container .product-right .product-right_title .months {
   font-size: 26px;
   font-style: normal;
   font-weight: 400;
-  line-height: 98.58%; /* 25.631px */
+  line-height: 100%; /* 25.631px */
 }
 main #product .product-container .product-right p {
   color: #c3c3c3;
   font-size: 20px;
   font-weight: 400;
   padding: 0 2.5rem;
-  line-height: 98.58%; /* 19.716px */
+  line-height: 100%; /* 19.716px */
 }
 main #product .product-container .product-right .product-right_button {
   display: flex;
@@ -759,7 +759,7 @@ main #product .product-container .product-right .product-right_button .price {
   color: #8b8b8b;
   font-size: 24px;
   font-weight: 400;
-  line-height: 98.58%; /* 23.659px */
+  line-height: 100%; /* 23.659px */
   border-radius: 12px;
   background: #f1f1f1;
 }
@@ -779,7 +779,7 @@ main #product .product-container .product-right .product-right_button .stake {
   text-align: center;
   font-size: 26px;
   font-weight: 700;
-  line-height: 98.58%; /* 25.631px */
+  line-height: 100%; /* 25.631px */
 }
 main #product .product-container .product-right .product-right_button .stake:hover {
   cursor: pointer;
